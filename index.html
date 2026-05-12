@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BUB Rafat — Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>BUB<span class="logo-dot">.</span>Rafat<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero"      class="nav-link"><span class="nav-num">01</span>Home</a></li>
+      <li><a href="#about"     class="nav-link"><span class="nav-num">02</span>About</a></li>
+      <li><a href="#education" class="nav-link"><span class="nav-num">03</span>Education</a></li>
+      <li><a href="#skills"    class="nav-link"><span class="nav-num">04</span>Skills</a></li>
+      <li><a href="#projects"  class="nav-link"><span class="nav-num">05</span>Projects</a></li>
+      <li><a href="#contact"   class="nav-link nav-cta">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span id="themeIcon">☀️</span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+
+    <div class="hero-left reveal">
+      <div class="hero-tag"><span class="tag-dot"></span>Available for hire</div>
+      <h1 class="hero-name">
+        <span class="name-line">Bashir</span>
+        <span class="name-line italic">Uddin</span>
+        <span class="name-line">Bhuiyan Rafat</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <h2 class="hero-role">Software Engineering Student &amp; UI Developer</h2>
+      <p class="hero-intro">Crafting pixel-perfect, accessible web experiences where clean code meets thoughtful design. Based in Dhaka, Bangladesh.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Work <span class="btn-arrow">→</span></a>
+        <a href="#contact"  class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal-right">
+      <div class="hero-card">
+        <div class="card-photo">
+          <img src="bashir_uddin_bhuiyan_rafat.jpg" alt="Bashir Uddin Bhuiyan Rafat"
+               onerror="this.src='8999920f-2982-46f0-ac13-8fe40be77a4a.png'; this.onerror=function(){this.parentElement.classList.add('photo-error');}"/>
+          <div class="photo-fallback">👨‍💻</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Who I Am</span>
+        <h2 class="section-title">About <em>Me</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-accent reveal">
+          <div class="accent-box">
+            <p class="accent-quote">"Great software is equal parts engineering and empathy."</p>
+            <ul class="about-details">
+              <li><span class="dl">Location</span><span class="dv">Mirpur, Dhaka, BD</span></li>
+              <li><span class="dl">Degree</span><span class="dv">B.Sc. Software Eng.</span></li>
+              <li><span class="dl">Email</span><span class="dv">bu91971@gmail.com</span></li>
+              <li><span class="dl">Languages</span><span class="dv">English · Bengali · Hindi</span></li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm" download>Download CV ↓</a>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>I'm a <strong>Software Engineering student</strong> at Daffodil International University with a passion for building beautiful, functional web applications. My journey started with a curiosity about how websites worked, and quickly grew into a full-fledged love for the craft.</p>
+          <p>When I'm not coding, you'll find me exploring design systems, contributing to open-source projects, or sketching UI concepts on paper. I believe that every pixel, every line of code, and every interaction matters.</p>
+          <p>I'm actively looking for exciting opportunities where I can contribute, grow, and continue to build things people genuinely love to use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Academic Path</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">2023 — Present</span>
+              <span class="edu-badge current">Ongoing</span>
+            </div>
+            <h3 class="edu-degree">B.Sc. in Software Engineering</h3>
+            <p class="edu-inst">Daffodil International University</p>
+            <p class="edu-loc">📍 Dhaka, Bangladesh</p>
+            <p class="edu-desc">Pursuing a comprehensive software engineering degree covering data structures, algorithms, system design, web development, databases, and software project management. Active member of the university programming club.</p>
+            <div class="edu-tags">
+              <span>Data Structures</span><span>Web Development</span><span>Software Design</span><span>Database Systems</span><span>OOP</span>
+            </div>
+          </div>
+          <div class="edu-grade-panel">
+            <div class="grade-label">Grade Summary</div>
+            <div class="grade-item"><span class="g-name">Current CGPA</span><span class="g-val highlight">3.00 / 4.00</span></div>
+            <div class="grade-item"><span class="g-name">Credits Done</span><span class="g-val">127 / 160</span></div>
+            <div class="grade-item"><span class="g-name">Semester</span><span class="g-val">8th</span></div>
+            <div class="grade-item"><span class="g-name">Status</span><span class="g-val green">In Progress</span></div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">2019 — 2021</span>
+              <span class="edu-badge">HSC</span>
+            </div>
+            <h3 class="edu-degree">Higher Secondary Certificate (HSC)</h3>
+            <p class="edu-inst">Monipur High School &amp; College (Group Science)</p>
+            <p class="edu-loc">📍 Dhaka, Bangladesh</p>
+            <p class="edu-desc">Completed Higher Secondary Certificate in the Science stream with a strong focus on Physics, Mathematics, and Chemistry. Built the analytical foundation that drives my problem-solving approach today.</p>
+            <div class="edu-tags"><span>Physics</span><span>Mathematics</span><span>Chemistry</span><span>ICT</span></div>
+          </div>
+          <div class="edu-grade-panel">
+            <div class="grade-label">Grade Summary</div>
+            <div class="grade-item"><span class="g-name">GPA</span><span class="g-val highlight">4.87 / 5.00</span></div>
+            <div class="grade-item"><span class="g-name">Group</span><span class="g-val">Science</span></div>
+            <div class="grade-item"><span class="g-name">Board</span><span class="g-val">Dhaka</span></div>
+            <div class="grade-item"><span class="g-name">Year</span><span class="g-val">2021</span></div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">📚</div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">2017 — 2019</span>
+              <span class="edu-badge">SSC</span>
+            </div>
+            <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+            <p class="edu-inst">Rupagar Model School &amp; College (Group Science)</p>
+            <p class="edu-loc">📍 Dhaka, Bangladesh</p>
+            <p class="edu-desc">Completed Secondary School Certificate with distinction in Science, laying the groundwork for higher education in technology and engineering.</p>
+            <div class="edu-tags"><span>Science</span><span>Mathematics</span><span>ICT</span></div>
+          </div>
+          <div class="edu-grade-panel">
+            <div class="grade-label">Grade Summary</div>
+            <div class="grade-item"><span class="g-name">GPA</span><span class="g-val highlight">4.56 / 5.00</span></div>
+            <div class="grade-item"><span class="g-name">Group</span><span class="g-val">Science</span></div>
+            <div class="grade-item"><span class="g-name">Board</span><span class="g-val">Dhaka</span></div>
+            <div class="grade-item"><span class="g-name">Year</span><span class="g-val">2019</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// What I Know</span>
+        <h2 class="section-title">My <em>Skills</em></h2>
+      </div>
+      <div class="skills-cats">
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header"><span class="skill-cat-icon">⌨️</span><h3 class="skill-cat-title">Programming Languages</h3></div>
+          <div class="skill-pills">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" class="sp-icon"/><span>Python</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" class="sp-icon"/><span>C</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" class="sp-icon"/><span>Java</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" class="sp-icon"/><span>PHP</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🌐</span><h3 class="skill-cat-title">Web &amp; Frameworks</h3></div>
+          <div class="skill-pills">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" class="sp-icon"/><span>HTML</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" class="sp-icon"/><span>CSS</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" class="sp-icon"/><span>JavaScript</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="" class="sp-icon flask-icon"/><span>Flask</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" class="sp-icon"/><span>Bootstrap</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🗄️</span><h3 class="skill-cat-title">Database</h3></div>
+          <div class="skill-pills">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" class="sp-icon"/><span>MySQL</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" class="sp-icon"/><span>PostgreSQL</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="" class="sp-icon"/><span>SQLite</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header"><span class="skill-cat-icon">📊</span><h3 class="skill-cat-title">Data Science</h3></div>
+          <div class="skill-pills">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="" class="sp-icon"/><span>NumPy</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="" class="sp-icon"/><span>Pandas</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="" class="sp-icon"/><span>Matplotlib</span></div>
+            <div class="skill-pill"><span class="sp-emoji">🌊</span><span>Seaborn</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="" class="sp-icon"/><span>Scikit-learn</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🛠️</span><h3 class="skill-cat-title">Tools &amp; Platforms</h3></div>
+          <div class="skill-pills">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" class="sp-icon"/><span>Git / GitHub</span></div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" class="sp-icon"/><span>VS Code</span></div>
+            <div class="skill-pill"><span class="sp-emoji">🔬</span><span>Google Colab</span></div>
+            <div class="skill-pill"><span class="sp-emoji">📈</span><span>Power BI</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat reveal">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🧠</span><h3 class="skill-cat-title">Soft Skills</h3></div>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-emoji">🤝</span><span>Team Collaboration</span></div>
+            <div class="skill-pill"><span class="sp-emoji">💡</span><span>Problem Solving</span></div>
+            <div class="skill-pill"><span class="sp-emoji">🗣️</span><span>Communication</span></div>
+            <div class="skill-pill"><span class="sp-emoji">⏱️</span><span>Time Management</span></div>
+            <div class="skill-pill"><span class="sp-emoji">🎨</span><span>Creative Thinking</span></div>
+            <div class="skill-pill"><span class="sp-emoji">📖</span><span>Fast Learner</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="card-num">01</div>
+          <div class="card-img">
+            <img src="428328de-cde0-4bdd-ba50-48c924067c2e.png" alt="NutriConnect" onerror="this.parentElement.classList.add('img-fallback')"/>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row"><h3 class="card-title">NutriConnect</h3><span class="card-cat">Health Tech</span></div>
+            <p class="card-desc">A nutrition platform connecting users with personalised diet plans, meal tracking, and health insights powered by Flask &amp; SQLAlchemy.</p>
+            <div class="card-tags"><span>Python</span><span>Flask</span><span>Bootstrap</span><span>SQLAlchemy</span></div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Live Demo <span>↗</span></a>
+              <a href="https://github.com/tamannajarin04/NutriConnect.git" target="_blank" class="btn-link ghost">GitHub <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-num">02</div>
+          <div class="card-img">
+            <img src="weatherwise.jpg" alt="WeatherWise" onerror="this.parentElement.classList.add('img-fallback')"/>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row"><h3 class="card-title">WeatherWise</h3><span class="card-cat">Data Viz</span></div>
+            <p class="card-desc">A weather dashboard that visualises 7-day forecasts with animated charts using the OpenWeather API and D3.js.</p>
+            <div class="card-tags"><span>Python</span><span>D3.js</span><span>REST API</span></div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Live Demo <span>↗</span></a>
+              <a href="#" class="btn-link ghost">GitHub <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-num">03</div>
+          <div class="card-img">
+            <img src="connecthub.jpg" alt="ConnectHub" onerror="this.parentElement.classList.add('img-fallback')"/>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row"><h3 class="card-title">ConnectHub</h3><span class="card-cat">Social</span></div>
+            <p class="card-desc">A minimal social platform with post feeds, follow system, and real-time notifications built with WebSockets.</p>
+            <div class="card-tags"><span>React</span><span>Socket.io</span><span>PostgreSQL</span></div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Live Demo <span>↗</span></a>
+              <a href="#" class="btn-link ghost">GitHub <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Let's Talk</span>
+        <h2 class="section-title">Get In <em>Touch</em></h2>
+      </div>
+      <div class="contact-universe reveal">
+        <div class="contact-center-card">
+          <div class="contact-avatar">BR</div>
+          <p class="contact-name">Bashir Uddin Bhuiyan Rafat</p>
+          <p class="contact-tagline">Open to freelance, internships &amp; full-time roles</p>
+          <a href="mailto:bu91971@gmail.com" class="btn btn-primary">Say Hello <span class="btn-arrow">✉️</span></a>
+        </div>
+        <div class="contact-cards-grid">
+          <a href="mailto:bu91971@gmail.com" class="ccard">
+            <span class="ccard-icon">📧</span>
+            <span class="ccard-label">Email</span>
+            <span class="ccard-val">bu91971@gmail.com</span>
+          </a>
+          <a href="tel:+8801821452066" class="ccard">
+            <span class="ccard-icon">📞</span>
+            <span class="ccard-label">Phone</span>
+            <span class="ccard-val">+880 1821 452066</span>
+          </a>
+          <div class="ccard no-link">
+            <span class="ccard-icon">📍</span>
+            <span class="ccard-label">Location</span>
+            <span class="ccard-val">Mirpur, Dhaka, BD</span>
+          </div>
+          <a href="https://www.linkedin.com/in/bashir-uddin-bhuiyan-rafat-6a78a4386/" target="_blank" class="ccard">
+            <span class="ccard-icon">🔗</span>
+            <span class="ccard-label">LinkedIn</span>
+            <span class="ccard-val">BUB Rafat</span>
+          </a>
+          <a href="https://github.com/Rafat00" target="_blank" class="ccard">
+            <span class="ccard-icon">💻</span>
+            <span class="ccard-label">GitHub</span>
+            <span class="ccard-val">@Rafat00</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="fyear">2025</span> <span class="f-name">Bashir Uddin Bhuiyan Rafat</span> — Built with passion &amp; vanilla JS.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Rafat00" target="_blank" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/bashir-uddin-bhuiyan-rafat-6a78a4386/" target="_blank" aria-label="LinkedIn">LI</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
