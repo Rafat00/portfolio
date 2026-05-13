@@ -100,6 +100,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  /* ── CV MODAL ── */
+  const cvModal    = document.getElementById('cvModal');
+  const viewCvBtn  = document.getElementById('viewCvBtn');
+  const cvCloseBtn = document.getElementById('cvCloseBtn');
+  const cvIframe   = cvModal ? cvModal.querySelector('.cv-iframe') : null;
+
+  function openCvModal() {
+    cvModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    // detect iframe load failure (e.g. browser blocks inline PDF)
+    if (cvIframe) {
+      cvIframe.onerror = () => cvIframe.classList.add('hidden');
+    }
+  }
+  function closeCvModal() {
+    cvModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  if (viewCvBtn)  viewCvBtn.addEventListener('click',  (e) => { e.preventDefault(); openCvModal(); });
+  if (cvCloseBtn) cvCloseBtn.addEventListener('click', closeCvModal);
+  if (cvModal)    cvModal.addEventListener('click', (e) => { if (e.target === cvModal) closeCvModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCvModal(); });
+
   /* ── AUTO YEAR ── */
   const yr = document.getElementById('fyear');
   if (yr) yr.textContent = new Date().getFullYear();

@@ -18,11 +18,11 @@
       <span class="logo-bracket">[</span>BUB<span class="logo-dot">.</span>Rafat<span class="logo-bracket">]</span>
     </div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#hero"      class="nav-link"><span class="nav-num">01</span>Home</a></li>
-      <li><a href="#about"     class="nav-link"><span class="nav-num">02</span>About</a></li>
-      <li><a href="#education" class="nav-link"><span class="nav-num">03</span>Education</a></li>
-      <li><a href="#skills"    class="nav-link"><span class="nav-num">04</span>Skills</a></li>
-      <li><a href="#projects"  class="nav-link"><span class="nav-num">05</span>Projects</a></li>
+      <li><a href="#hero"      class="nav-link">Home</a></li>
+      <li><a href="#about"     class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills"    class="nav-link">Skills</a></li>
+      <li><a href="#projects"  class="nav-link">Projects</a></li>
       <li><a href="#contact"   class="nav-link nav-cta">Contact</a></li>
     </ul>
     <div class="nav-right">
@@ -83,7 +83,7 @@
               <li><span class="dl">Email</span><span class="dv">bu91971@gmail.com</span></li>
               <li><span class="dl">Languages</span><span class="dv">English · Bengali · Hindi</span></li>
             </ul>
-            <a href="#" class="btn btn-primary btn-sm" download>Download CV ↓</a>
+            <a href="#" class="btn btn-primary btn-sm" id="viewCvBtn">View CV ↑</a>
           </div>
         </div>
         <div class="about-text reveal">
@@ -121,9 +121,9 @@
           </div>
           <div class="edu-grade-panel">
             <div class="grade-label">Grade Summary</div>
-            <div class="grade-item"><span class="g-name">Current CGPA</span><span class="g-val highlight">3.00 / 4.00</span></div>
-            <div class="grade-item"><span class="g-name">Credits Done</span><span class="g-val">127 / 160</span></div>
-            <div class="grade-item"><span class="g-name">Semester</span><span class="g-val">8th</span></div>
+            <div class="grade-item"><span class="g-name">Current CGPA</span><span class="g-val highlight">3.65 / 4.00</span></div>
+            <div class="grade-item"><span class="g-name">Credits Done</span><span class="g-val">96 / 160</span></div>
+            <div class="grade-item"><span class="g-name">Semester</span><span class="g-val">6th</span></div>
             <div class="grade-item"><span class="g-name">Status</span><span class="g-val green">In Progress</span></div>
           </div>
         </div>
@@ -143,7 +143,7 @@
           </div>
           <div class="edu-grade-panel">
             <div class="grade-label">Grade Summary</div>
-            <div class="grade-item"><span class="g-name">GPA</span><span class="g-val highlight">4.87 / 5.00</span></div>
+            <div class="grade-item"><span class="g-name">GPA</span><span class="g-val highlight">4.83 / 5.00</span></div>
             <div class="grade-item"><span class="g-name">Group</span><span class="g-val">Science</span></div>
             <div class="grade-item"><span class="g-name">Board</span><span class="g-val">Dhaka</span></div>
             <div class="grade-item"><span class="g-name">Year</span><span class="g-val">2021</span></div>
@@ -165,7 +165,7 @@
           </div>
           <div class="edu-grade-panel">
             <div class="grade-label">Grade Summary</div>
-            <div class="grade-item"><span class="g-name">GPA</span><span class="g-val highlight">4.56 / 5.00</span></div>
+            <div class="grade-item"><span class="g-name">GPA</span><span class="g-val highlight">5.00 / 5.00</span></div>
             <div class="grade-item"><span class="g-name">Group</span><span class="g-val">Science</span></div>
             <div class="grade-item"><span class="g-name">Board</span><span class="g-val">Dhaka</span></div>
             <div class="grade-item"><span class="g-name">Year</span><span class="g-val">2019</span></div>
@@ -369,6 +369,27 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- CV MODAL -->
+  <div class="cv-modal-overlay" id="cvModal" role="dialog" aria-modal="true" aria-label="CV Preview">
+    <div class="cv-modal">
+      <div class="cv-modal-header">
+        <h3 class="cv-modal-title">Bashir Uddin Bhuiyan Rafat — CV</h3>
+        <div class="cv-modal-actions">
+          <a href="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" download class="btn btn-primary btn-sm">Download CV ↓</a>
+          <button class="cv-close-btn" id="cvCloseBtn" aria-label="Close">✕</button>
+        </div>
+      </div>
+      <div class="cv-modal-body">
+        <iframe src="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" class="cv-iframe" title="CV Preview"></iframe>
+        <div class="cv-fallback">
+          <p>📄 PDF preview not available in this browser.</p>
+          <a href="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" download class="btn btn-primary">Download CV ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
