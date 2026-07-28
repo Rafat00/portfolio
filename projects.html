@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — BUB Rafat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>BUB<span class="logo-dot">.</span>Rafat<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"      class="nav-link">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="education.html"  class="nav-link">Education</a></li>
+      <li><a href="skills.html"     class="nav-link">Skills</a></li>
+      <li><a href="projects.html"   class="nav-link active">Projects</a></li>
+      <li><a href="contact.html"    class="nav-link nav-cta">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span id="themeIcon">☀️</span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg-grid"></div>
+    <div class="page-hero-inner">
+      <div class="page-hero-tag"><span class="tag-dot"></span>// What I've Built</div>
+      <h1 class="page-hero-title">Projects</h1>
+      <p class="page-hero-sub">A selection of things I've built — from health tech to data visualisation and social platforms.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="card-num">01</div>
+          <div class="card-img">
+            <img src="428328de-cde0-4bdd-ba50-48c924067c2e.png" alt="NutriConnect" onerror="this.parentElement.classList.add('img-fallback')"/>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row"><h3 class="card-title">NutriConnect</h3><span class="card-cat">Health Tech</span></div>
+            <p class="card-desc">A nutrition platform connecting users with personalised diet plans, meal tracking, and health insights powered by Flask &amp; SQLAlchemy.</p>
+            <div class="card-tags"><span>Python</span><span>Flask</span><span>Bootstrap</span><span>SQLAlchemy</span></div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Live Demo <span>↗</span></a>
+              <a href="https://github.com/tamannajarin04/NutriConnect.git" target="_blank" class="btn-link ghost">GitHub <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-num">02</div>
+          <div class="card-img">
+            <img src="weatherwise.jpg" alt="WeatherWise" onerror="this.parentElement.classList.add('img-fallback')"/>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row"><h3 class="card-title">WeatherWise</h3><span class="card-cat">Data Viz</span></div>
+            <p class="card-desc">A weather dashboard that visualises 7-day forecasts with animated charts using the OpenWeather API and D3.js.</p>
+            <div class="card-tags"><span>Python</span><span>D3.js</span><span>REST API</span></div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Live Demo <span>↗</span></a>
+              <a href="#" class="btn-link ghost">GitHub <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-num">03</div>
+          <div class="card-img">
+            <img src="connecthub.jpg" alt="ConnectHub" onerror="this.parentElement.classList.add('img-fallback')"/>
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row"><h3 class="card-title">ConnectHub</h3><span class="card-cat">Social</span></div>
+            <p class="card-desc">A minimal social platform with post feeds, follow system, and real-time notifications built with WebSockets.</p>
+            <div class="card-tags"><span>React</span><span>Socket.io</span><span>PostgreSQL</span></div>
+            <div class="card-links">
+              <a href="#" class="btn-link">Live Demo <span>↗</span></a>
+              <a href="#" class="btn-link ghost">GitHub <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="fyear">2025</span> <span class="f-name">Bashir Uddin Bhuiyan Rafat</span> — Built with passion &amp; vanilla JS.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Rafat00" target="_blank" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/bashir-uddin-bhuiyan-rafat-6a78a4386/" target="_blank" aria-label="LinkedIn">LI</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CV MODAL -->
+  <div class="cv-modal-overlay" id="cvModal" role="dialog" aria-modal="true" aria-label="CV Preview">
+    <div class="cv-modal">
+      <div class="cv-modal-header">
+        <h3 class="cv-modal-title">Bashir Uddin Bhuiyan Rafat — CV</h3>
+        <div class="cv-modal-actions">
+          <a href="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" download class="btn btn-primary btn-sm">Download CV ↓</a>
+          <button class="cv-close-btn" id="cvCloseBtn" aria-label="Close">✕</button>
+        </div>
+      </div>
+      <div class="cv-modal-body">
+        <iframe src="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" class="cv-iframe" title="CV Preview"></iframe>
+        <div class="cv-fallback">
+          <p>📄 PDF preview not available in this browser.</p>
+          <a href="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" download class="btn btn-primary">Download CV ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

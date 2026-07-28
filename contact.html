@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BUB Rafat — Software Engineer</title>
+  <title>Contact — BUB Rafat</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -18,12 +18,12 @@
       <span class="logo-bracket">[</span>BUB<span class="logo-dot">.</span>Rafat<span class="logo-bracket">]</span>
     </div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html"      class="nav-link active">Home</a></li>
+      <li><a href="index.html"      class="nav-link">Home</a></li>
       <li><a href="about.html"      class="nav-link">About</a></li>
       <li><a href="education.html"  class="nav-link">Education</a></li>
       <li><a href="skills.html"     class="nav-link">Skills</a></li>
       <li><a href="projects.html"   class="nav-link">Projects</a></li>
-      <li><a href="contact.html"    class="nav-link nav-cta">Contact</a></li>
+      <li><a href="contact.html"    class="nav-link nav-cta active">Contact</a></li>
     </ul>
     <div class="nav-right">
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span id="themeIcon">☀️</span></button>
@@ -31,39 +31,55 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
+  <!-- PAGE HERO -->
+  <section class="page-hero">
     <div class="hero-bg-grid"></div>
-    <div class="hero-orb orb-1"></div>
-    <div class="hero-orb orb-2"></div>
-
-    <div class="hero-left reveal">
-      <div class="hero-tag"><span class="tag-dot"></span>Available for hire</div>
-      <h1 class="hero-name">
-        <span class="name-line">Bashir</span>
-        <span class="name-line italic">Uddin</span>
-        <span class="name-line">Bhuiyan Rafat</span>
-      </h1>
-      <div class="hero-rule"></div>
-      <h2 class="hero-role">Software Engineering Student &amp; UI Developer</h2>
-      <p class="hero-intro">Crafting pixel-perfect, accessible web experiences where clean code meets thoughtful design. Based in Dhaka, Bangladesh.</p>
-      <div class="hero-actions">
-        <a href="projects.html" class="btn btn-primary">View Work <span class="btn-arrow">→</span></a>
-        <a href="contact.html"  class="btn btn-outline">Hire Me</a>
-      </div>
+    <div class="page-hero-inner">
+      <div class="page-hero-tag"><span class="tag-dot"></span>// Let's Talk</div>
+      <h1 class="page-hero-title">Get In <em>Touch</em></h1>
+      <p class="page-hero-sub">Open to freelance work, internships, and full-time roles. Reach out through any channel below.</p>
     </div>
+  </section>
 
-    <div class="hero-right reveal-right">
-      <div class="hero-card">
-        <div class="card-photo">
-          <img src="bashir_uddin_bhuiyan_rafat.png" alt="Bashir Uddin Bhuiyan Rafat"
-               onerror="this.src='8999920f-2982-46f0-ac13-8fe40be77a4a.png'; this.onerror=function(){this.parentElement.classList.add('photo-error');}"/>
-          <div class="photo-fallback">👨‍💻</div>
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-universe reveal">
+        <div class="contact-center-card">
+          <div class="contact-avatar">BR</div>
+          <p class="contact-name">Bashir Uddin Bhuiyan Rafat</p>
+          <p class="contact-tagline">Open to freelance, internships &amp; full-time roles</p>
+          <a href="mailto:bu91971@gmail.com" class="btn btn-primary">Say Hello <span class="btn-arrow">✉️</span></a>
+        </div>
+        <div class="contact-cards-grid">
+          <a href="mailto:bu91971@gmail.com" class="ccard">
+            <span class="ccard-icon">📧</span>
+            <span class="ccard-label">Email</span>
+            <span class="ccard-val">bu91971@gmail.com</span>
+          </a>
+          <a href="tel:+8801821452066" class="ccard">
+            <span class="ccard-icon">📞</span>
+            <span class="ccard-label">Phone</span>
+            <span class="ccard-val">+880 1821 452066</span>
+          </a>
+          <div class="ccard no-link">
+            <span class="ccard-icon">📍</span>
+            <span class="ccard-label">Location</span>
+            <span class="ccard-val">Mirpur, Dhaka, BD</span>
+          </div>
+          <a href="https://www.linkedin.com/in/bashir-uddin-bhuiyan-rafat-6a78a4386/" target="_blank" class="ccard">
+            <span class="ccard-icon">🔗</span>
+            <span class="ccard-label">LinkedIn</span>
+            <span class="ccard-val">BUB Rafat</span>
+          </a>
+          <a href="https://github.com/Rafat00" target="_blank" class="ccard">
+            <span class="ccard-icon">💻</span>
+            <span class="ccard-label">GitHub</span>
+            <span class="ccard-val">@Rafat00</span>
+          </a>
         </div>
       </div>
     </div>
-
-    <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
 
   <!-- FOOTER -->

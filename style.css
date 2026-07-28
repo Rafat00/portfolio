@@ -213,6 +213,10 @@ em  { font-style: italic; color: var(--gold); }
   box-shadow: 0 4px 20px rgba(200,170,110,0.45) !important;
   transform: scale(1.04) !important;
 }
+.nav-cta.active {
+  background: var(--gold-light) !important;
+  color: #0a0a0f !important;
+}
 
 .nav-right { display: flex; align-items: center; gap: 8px; }
 .theme-toggle {
@@ -298,6 +302,30 @@ em  { font-style: italic; color: var(--gold); }
 }
 .scroll-line { width: 1px; height: 48px; background: linear-gradient(var(--gold), transparent); animation: scrollAnim 2s ease-in-out infinite; }
 @keyframes scrollAnim { 0%,100%{transform:scaleY(1);opacity:1;} 50%{transform:scaleY(0.5);opacity:0.5;} }
+
+/* ── PAGE HERO (for non-home pages) ── */
+.page-hero {
+  padding-top: calc(var(--nav-h) + 64px);
+  padding-bottom: 48px;
+  padding-inline: clamp(24px, 6vw, 80px);
+  position: relative; overflow: hidden;
+}
+.page-hero .hero-bg-grid { opacity: 0.6; }
+.page-hero-inner { position: relative; z-index: 1; max-width: 760px; }
+.page-hero-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: .78rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid var(--border-acc);
+  padding: 6px 16px; border-radius: 99px; margin-bottom: 20px;
+  background: var(--gold-dim);
+}
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 900; color: var(--text); line-height: 1.1; margin-bottom: 14px;
+}
+.page-hero-title em { font-style: italic; color: var(--gold); }
+.page-hero-sub { font-size: 1rem; color: var(--text-muted); max-width: 520px; line-height: 1.8; }
 
 /* ── ABOUT ── */
 .about { background: var(--bg-alt); }

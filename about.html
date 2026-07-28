@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BUB Rafat — Software Engineer</title>
+  <title>About — BUB Rafat</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -18,8 +18,8 @@
       <span class="logo-bracket">[</span>BUB<span class="logo-dot">.</span>Rafat<span class="logo-bracket">]</span>
     </div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html"      class="nav-link active">Home</a></li>
-      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="index.html"      class="nav-link">Home</a></li>
+      <li><a href="about.html"      class="nav-link active">About</a></li>
       <li><a href="education.html"  class="nav-link">Education</a></li>
       <li><a href="skills.html"     class="nav-link">Skills</a></li>
       <li><a href="projects.html"   class="nav-link">Projects</a></li>
@@ -31,39 +31,39 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
+  <!-- PAGE HERO -->
+  <section class="page-hero">
     <div class="hero-bg-grid"></div>
-    <div class="hero-orb orb-1"></div>
-    <div class="hero-orb orb-2"></div>
-
-    <div class="hero-left reveal">
-      <div class="hero-tag"><span class="tag-dot"></span>Available for hire</div>
-      <h1 class="hero-name">
-        <span class="name-line">Bashir</span>
-        <span class="name-line italic">Uddin</span>
-        <span class="name-line">Bhuiyan Rafat</span>
-      </h1>
-      <div class="hero-rule"></div>
-      <h2 class="hero-role">Software Engineering Student &amp; UI Developer</h2>
-      <p class="hero-intro">Crafting pixel-perfect, accessible web experiences where clean code meets thoughtful design. Based in Dhaka, Bangladesh.</p>
-      <div class="hero-actions">
-        <a href="projects.html" class="btn btn-primary">View Work <span class="btn-arrow">→</span></a>
-        <a href="contact.html"  class="btn btn-outline">Hire Me</a>
-      </div>
+    <div class="page-hero-inner">
+      <div class="page-hero-tag"><span class="tag-dot"></span>// Who I Am</div>
+      <h1 class="page-hero-title">About <em>Me</em></h1>
+      <p class="page-hero-sub">A closer look at who I am, what drives me, and the path that brought me here.</p>
     </div>
+  </section>
 
-    <div class="hero-right reveal-right">
-      <div class="hero-card">
-        <div class="card-photo">
-          <img src="bashir_uddin_bhuiyan_rafat.png" alt="Bashir Uddin Bhuiyan Rafat"
-               onerror="this.src='8999920f-2982-46f0-ac13-8fe40be77a4a.png'; this.onerror=function(){this.parentElement.classList.add('photo-error');}"/>
-          <div class="photo-fallback">👨‍💻</div>
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-accent reveal">
+          <div class="accent-box">
+            <p class="accent-quote">"Great software is equal parts engineering and empathy."</p>
+            <ul class="about-details">
+              <li><span class="dl">Location</span><span class="dv">Mirpur, Dhaka, BD</span></li>
+              <li><span class="dl">Degree</span><span class="dv">B.Sc. Software Eng.</span></li>
+              <li><span class="dl">Email</span><span class="dv">bu91971@gmail.com</span></li>
+              <li><span class="dl">Languages</span><span class="dv">English · Bengali · Hindi</span></li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm" id="viewCvBtn">View CV ↑</a>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>I'm a <strong>Software Engineering student</strong> at Daffodil International University with a passion for building beautiful, functional web applications. My journey started with a curiosity about how websites worked, and quickly grew into a full-fledged love for the craft.</p>
+          <p>When I'm not coding, you'll find me exploring design systems, contributing to open-source projects, or sketching UI concepts on paper. I believe that every pixel, every line of code, and every interaction matters.</p>
+          <p>I'm actively looking for exciting opportunities where I can contribute, grow, and continue to build things people genuinely love to use.</p>
         </div>
       </div>
     </div>
-
-    <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
 
   <!-- FOOTER -->
@@ -83,15 +83,15 @@
       <div class="cv-modal-header">
         <h3 class="cv-modal-title">Bashir Uddin Bhuiyan Rafat — CV</h3>
         <div class="cv-modal-actions">
-          <a href="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" download class="btn btn-primary btn-sm">Download CV ↓</a>
+          <a href="cv (2).pdf" download class="btn btn-primary btn-sm">Download CV ↓</a>
           <button class="cv-close-btn" id="cvCloseBtn" aria-label="Close">✕</button>
         </div>
       </div>
       <div class="cv-modal-body">
-        <iframe src="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" class="cv-iframe" title="CV Preview"></iframe>
+        <iframe src="cv(2).pdf" class="cv-iframe" title="CV Preview"></iframe>
         <div class="cv-fallback">
           <p>📄 PDF preview not available in this browser.</p>
-          <a href="Bashir_Uddin_Bhuiyan_Rafat_CV.pdf" download class="btn btn-primary">Download CV ↓</a>
+          <a href="cv(2).pdf" download class="btn btn-primary">Download CV ↓</a>
         </div>
       </div>
     </div>

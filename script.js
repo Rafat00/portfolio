@@ -48,14 +48,29 @@ document.addEventListener('DOMContentLoaded', () => {
     themeIcon.textContent = theme === DARK ? '☀️' : '🌙';
   }
 
-  /* ── NAVBAR SCROLL + ACTIVE LINKS ── */
+  /* ── NAVBAR SCROLL ── */
   function handleScroll() {
     const scrollY = window.scrollY;
     navbar.classList.toggle('scrolled', scrollY > 20);
     backTop.classList.toggle('visible', scrollY > 500);
-    let current = '';
-    sections.forEach(sec => { if (scrollY >= sec.offsetTop - 120) current = sec.id; });
-    allLinks.forEach(link => { link.classList.toggle('active', link.getAttribute('href') === `#${current}`); });
+
+    /* On single-page sections (used for in-page anchors like #contact-top
+       if present), highlight nav link matching scroll position. On
+       multi-page setup this has no [id] sections to match beyond the
+       current page, so the server-rendered .active class (set per page
+       in each HTML file) remains the source of truth. */
+    if (sections.length) {
+      let current = '';
+      sections.forEach(sec => { if (scrollY >= sec.offsetTop - 120) current = sec.id; });
+      if (current) {
+        allLinks.forEach(link => {
+          const href = link.getAttribute('href') || '';
+          if (href.startsWith('#')) {
+            link.classList.toggle('active', href === `#${current}`);
+          }
+        });
+      }
+    }
   }
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
@@ -89,17 +104,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal,.reveal-right').forEach(el => revealObs.observe(el));
 
-  /* ── SMOOTH SCROLL ── */
+  /* ── SMOOTH SCROLL (in-page anchors only) ── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const targetSel = a.getAttribute('href');
+      if (targetSel === '#') return;
+      const target = document.querySelector(targetSel);
       if (target) {
         e.preventDefault();
         window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - navbar.offsetHeight - 8, behavior: 'smooth' });
       }
     });
   });
-
 
   /* ── CV MODAL ── */
   const cvModal    = document.getElementById('cvModal');
@@ -129,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yr) yr.textContent = new Date().getFullYear();
 
   /* ── STAGGERED HERO ANIMATION ── */
-  document.querySelectorAll('.hero-tag,.hero-name,.hero-rule,.hero-role,.hero-intro,.hero-actions').forEach((el, i) => {
+  document.querySelectorAll('.hero-tag,.hero-name,.hero-rule,.hero-role,.hero-intro,.hero-actions,.page-hero-tag,.page-hero-title,.page-hero-sub').forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = `opacity 0.6s ease ${i*0.1+0.2}s, transform 0.6s ease ${i*0.1+0.2}s`;
